@@ -1,0 +1,31 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-left {
+    max-width: 500px;
+    margin-right: 50px;
+}
+
+.about-left-name {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.about-left-subtitle {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.about-left-text {
+    margin-top: 20px;
+}
+
+.about-right {
+    min-width: 120px;
+    max-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #ccc;
+}
