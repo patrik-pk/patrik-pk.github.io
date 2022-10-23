@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.button {
+  display: block;
+  width: fit-content;
+  padding: 10px 15px;
+  background: transparent;
+  outline: 0;
+  border: 2px white solid;
+  font-size: 18px;
+  font-weight: 400;
+
+  &:hover {
+    background: $pink;
+    border-color: $pink;
+  }
+
+  &,
+  p {
+    color: white;
+    transition: 300ms all;
+  }
+}

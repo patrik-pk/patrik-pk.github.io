@@ -1,9 +1,18 @@
 .app {
-    padding-top: calc(70px + 30px);
+  min-width: 100vw;
+  max-width: 100vw;
+
+  // padding-top: calc(70px + 30px);
+  &,
+  a,
+  p,
+  button {
+    font-family: 'Raleway', sans-serif;
+  }
 }
 
 .container {
-    width: 90%;
-    max-width: 720px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
