@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-options {
+  display: flex;
+  margin: -30px;
+}
+
+.filter-options-item {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 30px;
+  cursor: pointer;
+
+  &.selected {
+    color: $pink;
+  }
+}

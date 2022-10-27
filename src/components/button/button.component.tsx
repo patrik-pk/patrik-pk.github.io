@@ -7,9 +7,7 @@ interface ButtonProps {
   handleClick?: () => void
 }
 
-const Button = (props: ButtonProps) => {
-  const { content, className, handleClick } = props
-
+const Button = ({ content, className, handleClick }: ButtonProps) => {
   return (
     <button className={`button ${className}`} onClick={handleClick}>
       {content}

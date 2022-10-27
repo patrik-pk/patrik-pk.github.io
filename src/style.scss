@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .app {
   min-width: 100vw;
   max-width: 100vw;
@@ -9,10 +11,58 @@
   button {
     font-family: 'Raleway', sans-serif;
   }
+
+  &,
+  a,
+  p {
+    color: $grey;
+
+    ::-moz-selection {
+      color: white;
+      background: $pink;
+    }
+
+    ::selection {
+      color: white;
+      background: $pink;
+    }
+  }
 }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 130px;
+
+  @include lg {
+    padding-top: 90px;
+    padding-bottom: 120px;
+  }
+
+  @include md {
+    padding-top: 75px;
+    padding-bottom: 100px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+}
+
+.title-medium {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.title-small {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
 }

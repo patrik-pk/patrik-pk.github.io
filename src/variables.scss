@@ -1,1 +1,94 @@
 $pink: #eb1962;
+$grey: #616161;
+$darkGrey: #444649;
+
+@mixin hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// Variable interpolation is not supported yet
+// $queryBreakpoints: (
+//   xs: 480px,
+//   sm: 768px,
+//   md: 992px,
+//   lg: 1200px,
+//   ex: 1400px,
+//   uw: 1400px,
+//   fullHD: 1920px
+// );
+
+// @each $breakpoint, $value in $queryBreakpoints {
+//   @mixin #{$breakpoint} {
+//     @media (max-width: #{$value}) {
+//       @content;
+//     }
+//   }
+// }
+
+$fullHD: 1920px;
+$uw: 1400px;
+$ex: 1400px;
+$lg: 1200px;
+$md: 992px;
+$sm: 768px;
+$xs: 480px;
+$xxs: 400px;
+
+@mixin fullHD {
+  @media (max-width: #{$fullHD}) {
+    @content;
+  }
+}
+
+@mixin uw {
+  @media (max-width: #{$uw}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$lg}) {
+    @content;
+  }
+}
+
+@mixin ex {
+  @media (max-width: #{$ex}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$lg}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$md}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$sm}) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: #{$xs}) {
+    @content;
+  }
+}
+
+@mixin xxs {
+  @media (max-width: #{$xxs}) {
+    @content;
+  }
+}

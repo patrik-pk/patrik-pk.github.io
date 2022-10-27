@@ -3,9 +3,10 @@
   padding: 0;
   border: 0;
   outline: 0;
-  // font-family: "Jost", sans-serif;
   background-repeat: no-repeat;
   vertical-align: baseline;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -27,15 +28,8 @@ html,
 body {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
   overflow-x: hidden;
-  // max-width: 100%;
-
-  // @include ultra-small {
-  // 	min-width: 480px;
-  // 	max-width: 480px;
-  // 	overflow-x: auto;
-  // }
 }
 
 ol,
@@ -50,7 +44,6 @@ a {
 }
 
 a {
-  color: black;
   text-decoration: none;
 }
 
