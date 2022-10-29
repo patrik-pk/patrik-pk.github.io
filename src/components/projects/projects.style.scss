@@ -19,4 +19,8 @@
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  @include responsive(600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

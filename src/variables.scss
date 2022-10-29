@@ -39,6 +39,12 @@ $sm: 768px;
 $xs: 480px;
 $xxs: 400px;
 
+@mixin responsive($breakpoint) {
+  @media (max-width: #{$breakpoint}) {
+    @content;
+  }
+}
+
 @mixin fullHD {
   @media (max-width: #{$fullHD}) {
     @content;

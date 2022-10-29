@@ -12,21 +12,21 @@
     font-family: 'Raleway', sans-serif;
   }
 
-  &,
-  a,
-  p {
-    color: $grey;
+  // &,
+  // a,
+  // p {
+  //   color: $grey;
 
-    ::-moz-selection {
-      color: white;
-      background: $pink;
-    }
+  //   ::-moz-selection {
+  //     color: white;
+  //     background: $pink;
+  //   }
 
-    ::selection {
-      color: white;
-      background: $pink;
-    }
-  }
+  //   ::selection {
+  //     color: white;
+  //     background: $pink;
+  //   }
+  // }
 }
 
 .container {

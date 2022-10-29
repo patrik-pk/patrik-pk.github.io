@@ -37,6 +37,12 @@ const Project = ({ project }: ProjectProps) => {
         <p className='pli-footer-left'>{`${
           project.type == 'commercial' ? 'Komerční' : 'Osobní'
         } projekt, ${project.date}`}</p>
+
+        {project.link && (
+          <a className='pli-footer-right' href={project.link} target='_blank'>
+            Show live
+          </a>
+        )}
       </footer>
     </li>
   )

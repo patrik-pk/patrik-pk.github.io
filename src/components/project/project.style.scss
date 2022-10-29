@@ -1,6 +1,6 @@
 @import '../../variables.scss';
 
-$content-padding: 20px;
+$content-padding-side: 20px;
 $footer-height: 50px;
 
 .project-list-item {
@@ -55,7 +55,9 @@ $footer-height: 50px;
   left: 0;
   width: 100%;
   height: 100px;
-  padding: $content-padding;
+  padding: $content-padding-side;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background: white;
   transition: 500ms all;
   overflow-y: auto;
@@ -63,12 +65,18 @@ $footer-height: 50px;
 }
 
 .pli-content-technologies {
+  font-size: 14px;
 }
 
 .pli-content-name {
+  font-size: 18px;
+  font-weight: 600;
+  // color: $darkGrey;
 }
 
 .pli-content-description {
+  margin-top: 17px;
+  font-size: 14px;
   visibility: hidden;
   opacity: 0;
   transition: 500ms all;
@@ -82,7 +90,7 @@ $footer-height: 50px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 $content-padding;
+  padding: 0 $content-padding-side;
   height: $footer-height;
   background: white;
   border-radius: 0 0 10px 10px;
@@ -90,4 +98,12 @@ $footer-height: 50px;
 }
 
 .pli-footer-left {
+  font-size: 14px;
+}
+
+.pli-footer-right {
+  text-transform: uppercase;
+  color: $pink;
+  font-size: 12px;
+  font-weight: 500;
 }

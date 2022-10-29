@@ -4,7 +4,7 @@ export interface ProjectInterface {
   type: 'commercial' | 'personal'
   date: string
   description?: string
-  link?: 'string'
+  link?: string
   order: number
 }
 
@@ -14,6 +14,7 @@ const projects: ProjectInterface[] = [
     technologies: 'Vue.js, Nuxt.js',
     type: 'commercial',
     date: '2022',
+    link: 'https://reklamnipotisk.cz/',
     description:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate accusamus ut voluptatibus autem consequatur iusto aspernatur quae amet vero sit reprehenderit ipsam eius suscipit similique quidem quaerat, animi unde veritatis! t amet consectetur adipisicing elit. Voluptate accusamus ut voluptatibus autem consequatur iusto aspernatur quae amet vero sit reprehenderit ipsam eius suscipit similique quidem quaerat, an',
     order: 200
@@ -23,14 +24,16 @@ const projects: ProjectInterface[] = [
     technologies: 'Vue.js, Nuxt.js',
     type: 'commercial',
     date: '2022',
+    link: 'https://demo.peko-studio.cz',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
     order: 160
   },
   {
-    name: 'Pay.me',
+    name: 'Pay.vip',
     technologies: 'Vue.js, Nuxt.js',
     type: 'commercial',
     date: '2022',
+    link: 'https://facilite-media.cz/',
     order: 100
   },
   {
@@ -38,6 +41,7 @@ const projects: ProjectInterface[] = [
     technologies: 'Wordpress',
     type: 'commercial',
     date: '2022',
+    link: 'https://grm.peko-studio.cz/',
     order: 140
   },
   {
@@ -45,6 +49,7 @@ const projects: ProjectInterface[] = [
     technologies: 'Wordpress',
     type: 'commercial',
     date: '2021 - 2022',
+    link: 'https://peko-studio.cz/',
     order: 130
   },
   {
@@ -52,6 +57,7 @@ const projects: ProjectInterface[] = [
     technologies: 'Vue.js, Nuxt.js',
     type: 'commercial',
     date: '2021',
+    link: 'https://zelena-zahrada-5127.rostiapp.cz/',
     order: 90
   },
   {
@@ -59,6 +65,7 @@ const projects: ProjectInterface[] = [
     technologies: 'React.js, Redux',
     type: 'personal',
     date: '2019 - 2020',
+    link: 'https://simple-rpg-game.netlify.app/',
     order: 70
   },
   {
@@ -73,6 +80,7 @@ const projects: ProjectInterface[] = [
     technologies: 'HTML5, CSS3, jQuery',
     type: 'personal',
     date: '2018',
+    link: 'https://patrikpk-portfolio.netlify.app/',
     order: 10
   }
 ]

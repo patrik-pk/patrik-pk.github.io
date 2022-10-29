@@ -28,7 +28,7 @@ const Projects = () => {
   )
 
   return (
-    <section className='projects section'>
+    <section className='projects section' id='projects'>
       <div className='container'>
         <SectionTitle content='Projects' />
         <main className='projects-main'>
@@ -37,11 +37,11 @@ const Projects = () => {
             selectedOption={selectedOption}
             setSelectedOption={setSelectedOption}
           />
-          <div className='projects-list'>
+          <ul className='projects-list'>
             {filteredProjects.map(project => (
               <Project project={project} key={project.name} />
             ))}
-          </div>
+          </ul>
         </main>
       </div>
     </section>

@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
   vertical-align: baseline;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  color: $grey;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -29,6 +32,9 @@ body {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   // scroll-behavior: smooth;
+}
+
+body {
   overflow-x: hidden;
 }
 
