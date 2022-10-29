@@ -21,10 +21,6 @@ const links: Array<Link> = [
     element: '#projects'
   },
   {
-    name: 'Code',
-    element: '#code'
-  },
-  {
     name: 'Contact',
     element: '#contact'
   }
@@ -61,9 +57,11 @@ const Navbar = () => {
   useEffect(() => {
     getActiveLinkBasedOnScroll()
     // TODO: throttle & debounce
-    window.addEventListener('scroll', e => {
-      getActiveLinkBasedOnScroll()
-    })
+    window.addEventListener('scroll', getActiveLinkBasedOnScroll)
+
+    return () => {
+      window.removeEventListener('scroll', getActiveLinkBasedOnScroll)
+    }
   }, [])
 
   return (

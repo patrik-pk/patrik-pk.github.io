@@ -32,7 +32,7 @@ const About = () => {
                   <li className='ati-list-item'>
                     HTML5, CSS3, JavaScript (ES6)
                   </li>
-                  <li className='ati-list-item'>React.js, Redux, Next.js</li>
+                  <li className='ati-list-item'>React.js, Redux</li>
                   <li className='ati-list-item'>Vue.js, Nuxt.js</li>
                   <li className='ati-list-item'>Typescript</li>
                 </ul>

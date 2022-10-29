@@ -3,6 +3,8 @@ import Navbar from './components/navbar/navbar.component'
 import About from './components/about/about.component'
 import Projects from './components/projects/projects.component'
 import CodeShowcase from './components/code-showcase/code-showcase.component'
+import Contact from './components/contact/contact.component'
+import Footer from './components/footer/footer.component'
 
 import './reset.scss'
 import './style.scss'
@@ -14,7 +16,9 @@ const App = () => {
       <Navbar />
       <About />
       <Projects />
-      <CodeShowcase />
+      <Contact />
+      <Footer />
+      {/* <CodeShowcase /> */}
     </div>
   )
 }
