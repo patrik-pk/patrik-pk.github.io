@@ -78,8 +78,13 @@
   cursor: pointer;
 
   &.active,
-  &:hover {
+  &:hover,
+  &:focus {
     color: $pink;
+  }
+
+  &:focus {
+    text-decoration: underline;
   }
 }
 

@@ -25,6 +25,10 @@ const Header = () => {
           handleClick={scrollToAbout}
         />
       </div>
+      <div className='header-language'>
+        <div className='header-language-item'>CS</div>
+        <div className='header-language-item'>EN</div>
+      </div>
     </header>
   )
 }

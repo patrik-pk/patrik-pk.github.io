@@ -14,6 +14,7 @@ const Button = ({ content, className, handleClick, type }: ButtonProps) => {
       type={type ? type : 'button'}
       className={`button ${className}`}
       onClick={handleClick}
+      // tabIndex={0}
     >
       {content}
     </button>

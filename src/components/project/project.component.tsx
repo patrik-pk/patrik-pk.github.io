@@ -21,7 +21,11 @@ const Project = ({ project }: ProjectProps) => {
   }
 
   return (
-    <li className='project-list-item' onMouseLeave={e => handleMouseLeave(e)}>
+    <li
+      className='project-list-item'
+      onMouseLeave={e => handleMouseLeave(e)}
+      tabIndex={0}
+    >
       <div className='pli-img'>
         <img src={ProfileImg} alt={project.name} />
       </div>

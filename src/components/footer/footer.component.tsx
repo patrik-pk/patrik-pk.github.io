@@ -21,7 +21,7 @@ const Footer = () => {
 
   return (
     <footer className='footer'>
-      <div className='footer-up-btn' onClick={scrollToHome}>
+      <div className='footer-up-btn' onClick={scrollToHome} tabIndex={0}>
         <ArrowUp />
       </div>
 
@@ -30,6 +30,7 @@ const Footer = () => {
           className='footer-social-item'
           href='https://github.com/patrik-pk'
           target='_blank'
+          tabIndex={0}
         >
           <Github />
         </a>
@@ -37,12 +38,14 @@ const Footer = () => {
           className='footer-social-item'
           href='https://www.linkedin.com/in/patrik-pukanec-2527b418a/'
           target='_blank'
+          tabIndex={0}
         >
           <Linkedin />
         </a>
         <a
           className='footer-social-item'
           href='mailto:patrik.pukanec@gmail.com'
+          tabIndex={0}
         >
           <Email />
         </a>

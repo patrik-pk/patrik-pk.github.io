@@ -1,3 +1,5 @@
+import React, { createContext } from 'react'
+
 import Header from './components/header/header.component'
 import Navbar from './components/navbar/navbar.component'
 import About from './components/about/about.component'
@@ -8,6 +10,8 @@ import Footer from './components/footer/footer.component'
 
 import './reset.scss'
 import './style.scss'
+
+// TODO: setup simple context
 
 const App = () => {
   return (

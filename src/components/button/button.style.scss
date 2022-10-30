@@ -10,7 +10,8 @@
   font-size: 18px;
   font-weight: 400;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: $pink;
     border-color: $pink;
   }

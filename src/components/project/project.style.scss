@@ -15,7 +15,8 @@ $footer-height: 50px;
   transition: 500ms all;
   overflow: hidden;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: none;
 
     .pli-content {
@@ -106,4 +107,8 @@ $footer-height: 50px;
   color: $pink;
   font-size: 12px;
   font-weight: 500;
+
+  &:focus {
+    text-decoration: underline;
+  }
 }

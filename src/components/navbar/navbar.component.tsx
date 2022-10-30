@@ -75,6 +75,7 @@ const Navbar = () => {
               }`}
               key={link.element}
               onClick={() => scrollToElement(link)}
+              tabIndex={0}
             >
               {link.name}
             </li>
