@@ -16,7 +16,8 @@ const Project = ({ project }: ProjectProps) => {
       return
     }
 
-    contentRef.current.scrollTo(0, 0)
+    // BUG: Unhovering project causes nav link/button scroll to get stuck
+    // contentRef.current.scrollTo(0, 0)
   }
 
   return (

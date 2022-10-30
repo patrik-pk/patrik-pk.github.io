@@ -2,14 +2,19 @@ import React from 'react'
 import './button.style.scss'
 
 interface ButtonProps {
+  type?: 'button' | 'submit' | 'reset'
   content: React.ReactNode | string
   className?: string
   handleClick?: () => void
 }
 
-const Button = ({ content, className, handleClick }: ButtonProps) => {
+const Button = ({ content, className, handleClick, type }: ButtonProps) => {
   return (
-    <button className={`button ${className}`} onClick={handleClick}>
+    <button
+      type={type ? type : 'button'}
+      className={`button ${className}`}
+      onClick={handleClick}
+    >
       {content}
     </button>
   )

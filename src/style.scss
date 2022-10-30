@@ -1,14 +1,13 @@
 @import './variables.scss';
 
 .app {
-  min-width: 100vw;
-  max-width: 100vw;
-
   // padding-top: calc(70px + 30px);
   &,
   a,
   p,
-  button {
+  button,
+  input,
+  textarea {
     font-family: 'Raleway', sans-serif;
   }
 
@@ -36,21 +35,44 @@
 }
 
 .section {
+  $section-pt: 100px;
+  $section-pt-lg: 90px;
+  $section-pt-md: 75px;
+  $section-pt-sm: 50px;
+
   padding-top: 100px;
   padding-bottom: 130px;
 
+  &.contact {
+    $contact-additional-padding: 70px;
+
+    padding-top: calc($section-pt + $contact-additional-padding);
+
+    @include lg {
+      padding-top: calc($section-pt-lg + $contact-additional-padding);
+    }
+
+    @include md {
+      padding-top: calc($section-pt-md + $contact-additional-padding);
+    }
+
+    @include sm {
+      padding-top: calc($section-pt-sm + $contact-additional-padding);
+    }
+  }
+
   @include lg {
-    padding-top: 90px;
+    padding-top: $section-pt-lg;
     padding-bottom: 120px;
   }
 
   @include md {
-    padding-top: 75px;
+    padding-top: $section-pt-md;
     padding-bottom: 100px;
   }
 
   @include sm {
-    padding-top: 50px;
+    padding-top: $section-pt-sm;
     padding-bottom: 70px;
   }
 }
