@@ -50,7 +50,7 @@
         },
         {
           "title": "Other",
-          "subitems": ["git", "GitHub, Bitbucket", "Figma"]
+          "subitems": ["git - GitHub, Bitbucket", "Postman", "Figma"]
         }
       ]
     }
