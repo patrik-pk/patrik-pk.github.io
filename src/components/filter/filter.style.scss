@@ -11,13 +11,21 @@
 }
 
 .filter-options-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  margin: 30px;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 30px;
   cursor: pointer;
+  // transition: 300ms all;
 
   &.selected {
-    color: $pink;
+    background: $pink;
+    color: white;
   }
 }
