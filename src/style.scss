@@ -1,6 +1,7 @@
 @import './variables.scss';
 
 .app {
+  position: relative;
   // padding-top: calc(70px + 30px);
   &,
   a,

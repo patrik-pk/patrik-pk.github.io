@@ -16,7 +16,7 @@ const About = () => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '-50%',
+      rootMargin: '0px',
       treshold: 1.0
     }
 

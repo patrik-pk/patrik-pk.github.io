@@ -13,7 +13,7 @@ const SectionTitle = ({ content, className }: SectionTitleProps) => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '-20%',
+      rootMargin: '0px',
       treshold: 1.0
     }
 
