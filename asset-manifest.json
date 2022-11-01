@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.42b20f91.css",
-    "main.js": "/static/js/main.f60ee02a.js",
+    "main.css": "/static/css/main.813288cf.css",
+    "main.js": "/static/js/main.ad1e6f44.js",
     "static/media/zenich-a-nevesta.png": "/static/media/zenich-a-nevesta.022267a959b17ed75b24.png",
     "static/media/pay-vip.png": "/static/media/pay-vip.0f30fb7a2c1d2c9656c7.png",
     "static/media/portfolio.png": "/static/media/portfolio.1727865f44a786122f9c.png",
@@ -11,18 +11,17 @@
     "static/media/reklamni-potisk.png": "/static/media/reklamni-potisk.a0d0751b802c3323b8b1.png",
     "static/media/grm.png": "/static/media/grm.ec51c3db5caa07f9fdf2.png",
     "static/media/header.jpg": "/static/media/header.4447e49b09e10826258a.jpg",
-    "static/media/profile.jpg": "/static/media/profile.f34328b715f29c576b55.jpg",
     "static/media/simple-rpg.png": "/static/media/simple-rpg.429bc225a35f0cc4aae1.png",
     "static/media/github.svg": "/static/media/github.b3895b64861b1cc897dd8660d781d838.svg",
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.d09d64fe30b941c2d5dba4695179f496.svg",
     "static/media/arrow-up.svg": "/static/media/arrow-up.6ac1dd5e2466768fdde4bb7a348ebfde.svg",
     "static/media/email.svg": "/static/media/email.09f59b228b67847fa9c917396a218b25.svg",
-    "main.42b20f91.css.map": "/static/css/main.42b20f91.css.map",
-    "main.f60ee02a.js.map": "/static/js/main.f60ee02a.js.map"
+    "main.813288cf.css.map": "/static/css/main.813288cf.css.map",
+    "main.ad1e6f44.js.map": "/static/js/main.ad1e6f44.js.map"
   },
   "entrypoints": [
-    "static/css/main.42b20f91.css",
-    "static/js/main.f60ee02a.js"
+    "static/css/main.813288cf.css",
+    "static/js/main.ad1e6f44.js"
   ]
 }
