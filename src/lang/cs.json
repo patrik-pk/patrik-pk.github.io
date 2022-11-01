@@ -1,1 +1,169 @@
-{}
+{
+  "header": {
+    "name": "Patrik Pukanec",
+    "role": "Web Developer",
+    "button": "Moje práce",
+    "lang": {
+      "cs": "cz",
+      "en": "en"
+    }
+  },
+  "navigationLinks": [
+    {
+      "name": "Domů",
+      "element": "#home"
+    },
+    {
+      "name": "O mně",
+      "element": "#about"
+    },
+    {
+      "name": "Projekty",
+      "element": "#projects"
+    },
+    {
+      "name": "Kontakt",
+      "element": "#contact"
+    }
+  ],
+  "about": {
+    "title": "O mně",
+    "left": {
+      "title": "Kdo jsem?",
+      "text": "Jsem Web Developer zaměřený převážně na Frontend. Mám také zkušenosti s Backendem - vytváření CRUD aplikací a API strukturou."
+    },
+    "right": {
+      "title": "Tech Stack",
+      "items": [
+        {
+          "title": "Frontend",
+          "subitems": [
+            "HTML5, CSS3, JavaScript (ES6)",
+            "React.js, Redux",
+            "Vue.js, Nuxt.js",
+            "TypeScript"
+          ]
+        },
+        {
+          "title": "Backend",
+          "subitems": ["Node.js, Express", "MongoDB", "TypeScript"]
+        },
+        {
+          "title": "Ostatní",
+          "subitems": ["git", "GitHub, Bitbucket", "Figma"]
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "Projekty",
+    "commercial": "Komerční projekt",
+    "personal": "Osobní projekt",
+    "github": "Github",
+    "showLive": "Zobrazit",
+    "filter": {
+      "commercial": "Komerční",
+      "personal": "Osobní"
+    },
+    "items": [
+      {
+        "name": "Reklamní potisk",
+        "technologies": "Vue.js, Nuxt.js",
+        "type": "commercial",
+        "date": "2022",
+        "link": "https://reklamnipotisk.cz/",
+        "img": "reklamni-potisk.png",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate accusamus ut voluptatibus autem consequatur iusto aspernatur quae amet vero sit reprehenderit ipsam eius suscipit similique quidem quaerat, animi unde veritatis! t amet consectetur adipisicing elit. Voluptate accusamus ut voluptatibus autem consequatur iusto aspernatur quae amet vero sit reprehenderit ipsam eius suscipit similique quidem quaerat, an",
+        "order": 200
+      },
+      {
+        "name": "Peko Shop",
+        "technologies": "Vue.js, Nuxt.js",
+        "type": "commercial",
+        "date": "2022",
+        "link": "https://demo.peko-studio.cz",
+        "img": "peko-shop.png",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "order": 160
+      },
+      {
+        "name": "Pay.vip",
+        "technologies": "Vue.js, Nuxt.js",
+        "type": "commercial",
+        "date": "2022",
+        "link": "https://facilite-media.cz/",
+        "img": "pay-vip.png",
+        "order": 100
+      },
+      {
+        "name": "GRM Systems",
+        "technologies": "Wordpress",
+        "type": "commercial",
+        "date": "2021 - 2022",
+        "link": "https://grm.peko-studio.cz/",
+        "img": "grm.png",
+        "order": 140
+      },
+      {
+        "name": "Peko Studio Web",
+        "technologies": "Wordpress",
+        "type": "commercial",
+        "date": "2021 - 2022",
+        "link": "https://peko-studio.cz/",
+        "img": "peko-web.png",
+        "order": 130
+      },
+      {
+        "name": "Zelena zahrada",
+        "technologies": "Vue.js, Nuxt.js",
+        "type": "commercial",
+        "date": "2021",
+        "link": "https://zelena-zahrada-5127.rostiapp.cz/",
+        "img": "zelena-zahrada.png",
+        "order": 90
+      },
+      {
+        "name": "Simple RPG",
+        "technologies": "React.js, Redux",
+        "type": "personal",
+        "date": "2020",
+        "link": "https://simple-rpg-game.netlify.app/",
+        "img": "simple-rpg.png",
+        "github": "https://github.com/patrik-pk/simple-rpg",
+        "order": 70
+      },
+      {
+        "name": "Portfolio",
+        "technologies": "React.js, TypeScript",
+        "type": "personal",
+        "date": "2022",
+        "link": "https://patrik-pk.github.io/",
+        "img": "portfolio.png",
+        "github": "https://github.com/patrik-pk/patrik-pk.github.io",
+        "order": 80
+      },
+      {
+        "name": "Ženich a nevěsta",
+        "technologies": "HTML5, CSS3, jQuery",
+        "type": "personal",
+        "date": "2018",
+        "link": "https://zenich-a-nevesta.netlify.app/",
+        "img": "zenich-a-nevesta.png",
+        "github": "https://github.com/patrik-pk/zenich-a-nevesta",
+        "order": 10
+      }
+    ]
+  },
+  "contact": {
+    "title": "Konakt",
+    "text": "Kontaktovat mě můžete pomocí formuláře, </br> nebo e-mailem v patičce",
+    "inputPlaceholders": {
+      "name": "Jméno",
+      "email": "E-mail",
+      "message": "Vaše zpráva"
+    },
+    "submit": "odeslat",
+    "formSuccess": "E-mail byl úspěšně odeslán",
+    "formError": "Odeslání e-mailu selhalo"
+  }
+}

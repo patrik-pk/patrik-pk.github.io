@@ -6,6 +6,15 @@
 .about-main {
   display: flex;
   justify-content: center;
+  transition: 500ms all;
+
+  &.visible {
+    .about-main-left,
+    .about-main-right {
+      transform: translateX(0);
+      opacity: 1 !important;
+    }
+  }
 
   @include md {
     justify-content: space-between;
@@ -21,10 +30,13 @@
 .about-main-left,
 .about-main-right {
   width: 350px;
+  transition: 500ms all;
+  opacity: 0;
 }
 
 .about-main-left {
   margin-right: 200px;
+  transform: translateX(-300px);
 
   @include md {
     margin-right: 0;
@@ -73,6 +85,9 @@
 }
 
 .about-main-right {
+  transform: translateX(300px);
+  transition: 500ms all;
+
   @include md {
     width: 300px;
   }

@@ -1,6 +1,7 @@
 @import '../../variables.scss';
 
 .section-title {
+  transform: translateX(-300px);
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -10,9 +11,18 @@
   line-height: 100%;
   color: $darkGrey;
   text-align: center;
+  opacity: 0;
+  transition: 500ms all;
+  transition-delay: 100ms;
+
+  &.visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .section-title-underline {
+  transform: translateX(-300px);
   width: 70px;
   height: 4px;
   margin-top: 15px;
@@ -20,6 +30,14 @@
   margin-left: auto;
   margin-right: auto;
   background: $darkGrey;
+  opacity: 0;
+  transition: 500ms all;
+  transition-delay: 500ms;
+
+  &.visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
   @include lg {
     margin-bottom: 90px;

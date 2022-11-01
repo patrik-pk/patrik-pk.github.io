@@ -11,7 +11,7 @@
   font-weight: 400;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background: $pink;
     border-color: $pink;
   }

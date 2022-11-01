@@ -1,6 +1,8 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useContext, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 import './contact.style.scss'
+
+import { LanguageContext } from '../../context/LanguageContext'
 
 import SectionTitle from '../section-title/section-title.component'
 import Button from '../button/button.component'
@@ -8,8 +10,14 @@ import Spinner from '../spinner/spinner.component'
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null)
+  const contactRef = useRef<HTMLDivElement>(null)
+
   const [loading, setLoading] = useState<boolean>(false)
   const [formStatus, setFormStatus] = useState<'success' | 'error' | null>(null)
+  const [isVisible, setIsVisible] = useState<boolean>(false)
+
+  const langContext = useContext(LanguageContext)
+  const { dictionary } = langContext.lang
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     if (!formRef.current || loading) {
@@ -42,21 +50,42 @@ const Contact = () => {
         setLoading(false)
         setFormStatus('error')
       })
-
-    // setFormData(initialFormData)
   }
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '-50%',
+      treshold: 1.0
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      const [entry] = entries
+
+      if (entry.isIntersecting) {
+        setIsVisible(entry.isIntersecting)
+      }
+    }, options)
+
+    if (contactRef.current) {
+      observer.observe(contactRef.current)
+    }
+  }, [])
 
   return (
     <section className='contact section' id='contact'>
       <div className='contact-clip'></div>
 
       <div className='container'>
-        <SectionTitle content='Contact' />
-        <main className='contact-main'>
-          <p className='contact-main-text'>
-            You can contact me using the form below <br /> or with e-mail on the
-            footer
-          </p>
+        <SectionTitle content={dictionary.contact.title} />
+        <main
+          className={`contact-main ${isVisible ? 'visible' : ''}`}
+          ref={contactRef}
+        >
+          <p
+            className='contact-main-text'
+            dangerouslySetInnerHTML={{ __html: dictionary.contact.text }}
+          ></p>
 
           <form
             className='contact-main-form'
@@ -70,7 +99,7 @@ const Contact = () => {
               // value={formData.name}
               type='text'
               name='name'
-              placeholder='Name'
+              placeholder={dictionary.contact.inputPlaceholders.name}
               required
               // onChange={handleChange}
             />
@@ -78,19 +107,19 @@ const Contact = () => {
               className='contact-main-form-input'
               type='email'
               name='email'
-              placeholder='E-mail'
+              placeholder={dictionary.contact.inputPlaceholders.email}
               required
             />
             <textarea
               className='contact-main-form-textarea'
               name='message'
-              placeholder='Your message'
+              placeholder={dictionary.contact.inputPlaceholders.message}
               required
             />
 
             <Button
               className={'contact-main-form-submit'}
-              content={'Submit'}
+              content={dictionary.contact.submit}
               type='submit'
             />
           </form>

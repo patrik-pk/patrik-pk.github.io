@@ -8,17 +8,29 @@
       "en": "en"
     }
   },
-  "navigation": {
-    "home": "home",
-    "about": "about",
-    "projects": "projects",
-    "contact": "contact"
-  },
+  "navigationLinks": [
+    {
+      "name": "Home",
+      "element": "#home"
+    },
+    {
+      "name": "About",
+      "element": "#about"
+    },
+    {
+      "name": "Projects",
+      "element": "#projects"
+    },
+    {
+      "name": "Contact",
+      "element": "#contact"
+    }
+  ],
   "about": {
     "title": "About",
     "left": {
       "title": "Who am I?",
-      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quam aspernatur beatae magni libero ad in incidunt velit consectetur ratione?"
+      "text": "I am a Web Developer focused mainly on Frontend. I also have experience with Backend - creating CRUD applications and structuring APIs."
     },
     "right": {
       "title": "Tech Stack",
@@ -29,12 +41,12 @@
             "HTML5, CSS3, JavaScript (ES6)",
             "React.js, Redux",
             "Vue.js, Nuxt.js",
-            "Typescript"
+            "TypeScript"
           ]
         },
         {
           "title": "Backend",
-          "subitems": ["Node.js, Express", "MongoDB", "Typescript"]
+          "subitems": ["Node.js, Express", "MongoDB", "TypeScript"]
         },
         {
           "title": "Other",
@@ -45,6 +57,14 @@
   },
   "projects": {
     "title": "Projects",
+    "commercial": "Commercial project",
+    "personal": "Personal project",
+    "github": "Github",
+    "showLive": "Show live",
+    "filter": {
+      "commercial": "Commercial",
+      "personal": "Personal"
+    },
     "items": [
       {
         "name": "Reklamní potisk",
@@ -52,6 +72,7 @@
         "type": "commercial",
         "date": "2022",
         "link": "https://reklamnipotisk.cz/",
+        "img": "reklamni-potisk.png",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate accusamus ut voluptatibus autem consequatur iusto aspernatur quae amet vero sit reprehenderit ipsam eius suscipit similique quidem quaerat, animi unde veritatis! t amet consectetur adipisicing elit. Voluptate accusamus ut voluptatibus autem consequatur iusto aspernatur quae amet vero sit reprehenderit ipsam eius suscipit similique quidem quaerat, an",
         "order": 200
       },
@@ -61,6 +82,7 @@
         "type": "commercial",
         "date": "2022",
         "link": "https://demo.peko-studio.cz",
+        "img": "peko-shop.png",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "order": 160
       },
@@ -70,6 +92,7 @@
         "type": "commercial",
         "date": "2022",
         "link": "https://facilite-media.cz/",
+        "img": "pay-vip.png",
         "order": 100
       },
       {
@@ -78,6 +101,7 @@
         "type": "commercial",
         "date": "2022",
         "link": "https://grm.peko-studio.cz/",
+        "img": "grm.png",
         "order": 140
       },
       {
@@ -86,6 +110,7 @@
         "type": "commercial",
         "date": "2021 - 2022",
         "link": "https://peko-studio.cz/",
+        "img": "peko-web.png",
         "order": 130
       },
       {
@@ -94,21 +119,27 @@
         "type": "commercial",
         "date": "2021",
         "link": "https://zelena-zahrada-5127.rostiapp.cz/",
+        "img": "zelena-zahrada.png",
         "order": 90
       },
       {
         "name": "Simple RPG",
         "technologies": "React.js, Redux",
         "type": "personal",
-        "date": "2019 - 2020",
+        "date": "2020",
         "link": "https://simple-rpg-game.netlify.app/",
+        "img": "simple-rpg.png",
+        "github": "https://github.com/patrik-pk/simple-rpg",
         "order": 70
       },
       {
         "name": "Portfolio",
-        "technologies": "React.js",
+        "technologies": "React.js, TypeScript",
         "type": "personal",
         "date": "2022",
+        "link": "https://patrik-pk.github.io/",
+        "img": "portfolio.png",
+        "github": "https://github.com/patrik-pk/patrik-pk.github.io",
         "order": 80
       },
       {
@@ -117,6 +148,8 @@
         "type": "personal",
         "date": "2018",
         "link": "https://patrikpk-portfolio.netlify.app/",
+        "img": "zenich-a-nevesta.png",
+        "github": "https://github.com/patrik-pk/zenich-a-nevesta",
         "order": 10
       }
     ]
@@ -129,6 +162,8 @@
       "email": "E-mail",
       "message": "Your message"
     },
-    "submit": "submit"
+    "submit": "submit",
+    "formSuccess": "E-mail successfully sent",
+    "formError": "Failed to send e-mail"
   }
 }

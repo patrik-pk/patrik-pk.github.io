@@ -1,34 +1,19 @@
-import React, { useState, useEffect } from 'react'
-
+import React, { useState, useEffect, useContext } from 'react'
 import './navbar.style.scss'
+
+import { LanguageContext } from '../../context/LanguageContext'
 
 interface Link {
   name: string
   element: string
 }
 
-const links: Array<Link> = [
-  {
-    name: 'Home',
-    element: '#home'
-  },
-  {
-    name: 'About',
-    element: '#about'
-  },
-  {
-    name: 'Projects',
-    element: '#projects'
-  },
-  {
-    name: 'Contact',
-    element: '#contact'
-  }
-]
-
 const Navbar = () => {
   const [expanded, setExpanded] = useState<boolean>(false)
   const [activeLink, setActiveLink] = useState<Link | null>(null)
+
+  const langContext = useContext(LanguageContext)
+  const { dictionary } = langContext.lang
 
   const scrollToElement = (link: Link): void => {
     const element: HTMLElement | null = document.querySelector(link.element)
@@ -41,7 +26,7 @@ const Navbar = () => {
   }
 
   const getActiveLinkBasedOnScroll = () => {
-    links.forEach(link => {
+    dictionary.navigationLinks.forEach((link: Link) => {
       const section: HTMLElement | null = document.querySelector(link.element)
 
       if (section) {
@@ -68,7 +53,7 @@ const Navbar = () => {
     <nav className={`nav ${expanded ? 'expanded' : ''}`}>
       <div className='nav-content container'>
         <ul className='nav-content-links'>
-          {links.map(link => (
+          {dictionary.navigationLinks.map((link: Link) => (
             <li
               className={`nav-content-links-item nav-link ${
                 activeLink && activeLink.element == link.element ? 'active' : ''
@@ -94,7 +79,7 @@ const Navbar = () => {
 
       <div className='nav-expanded'>
         <ul className='nav-expanded-links'>
-          {links.map(link => (
+          {dictionary.navigationLinks.map((link: Link) => (
             <li
               className={`nav-expanded-links-item nav-link ${
                 activeLink && activeLink.element == link.element ? 'active' : ''

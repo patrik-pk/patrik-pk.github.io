@@ -70,15 +70,25 @@
   max-width: 40px;
   height: 40px;
   background: white;
-  color: $pink;
+  // color: $pink;
+  color: black;
   font-size: 14px;
-  font-weight: 500;
-  transition: 300ms all;
+  font-weight: 600;
+  text-transform: uppercase;
+  // transition: 300ms all;
   z-index: 20;
 
-  &:hover,
+  &:focus-visible {
+    border: 1px $pink solid;
+  }
+
+  &:hover {
+    color: $pink;
+  }
+
+  // &:hover,
   &.active {
-    background: #1b242f;
+    background: black;
     color: white;
   }
 

@@ -30,7 +30,7 @@ const Filter = ({
             className={`filter-options-item ${opt.value ==
               selectedOption.value && 'selected'}`}
           >
-            {opt.value}
+            {opt.label}
           </li>
         ))}
       </ul>

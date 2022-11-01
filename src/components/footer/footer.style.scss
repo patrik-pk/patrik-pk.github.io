@@ -23,7 +23,7 @@
   cursor: pointer;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     svg {
       &,
       path {
@@ -67,7 +67,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background: $pink;
   }
 

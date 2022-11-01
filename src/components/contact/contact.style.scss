@@ -30,11 +30,25 @@
 
 .contact-main {
   position: relative;
+
+  &.visible {
+    .contact-main-text {
+      opacity: 1;
+    }
+
+    .contact-main-form {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
 }
 
 .contact-main-text {
   text-align: center;
   color: $pink;
+  font-weight: 400;
+  opacity: 0;
+  transition: 300ms all;
 }
 
 .contact-main-form {
@@ -46,6 +60,10 @@
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: 500ms all;
+  transition-delay: 300ms;
 }
 
 .contact-main-form-input,

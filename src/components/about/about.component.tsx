@@ -1,62 +1,74 @@
-import React from 'react'
+import React, { useContext, useState, useRef, useEffect } from 'react'
 import './about.style.scss'
+
+import { LanguageContext } from '../../context/LanguageContext'
 
 import SectionTitle from '../section-title/section-title.component'
 import ProfileImg from '../../assets/profile.jpg'
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false)
+  const langContext = useContext(LanguageContext)
+  const { dictionary } = langContext.lang
+
+  const aboutRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '-50%',
+      treshold: 1.0
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      const [entry] = entries
+
+      if (entry.isIntersecting) {
+        setIsVisible(entry.isIntersecting)
+      }
+    }, options)
+
+    if (aboutRef.current) {
+      observer.observe(aboutRef.current)
+    }
+  }, [])
+
   return (
     <section className='about section' id='about'>
       <div className='container'>
-        <SectionTitle content='About' />
-        <main className='about-main'>
+        <SectionTitle content={dictionary.about.title} />
+        <main
+          className={`about-main ${isVisible ? 'visible' : ''}`}
+          ref={aboutRef}
+        >
           <div className='about-main-left'>
             <div className='aml-photo'>
               <img src={ProfileImg} alt='' />
             </div>
-            <p className='aml-title title-medium'>Who am I?</p>
-            <p className='aml-text'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quam
-              aspernatur beatae magni libero ad in incidunt velit consectetur
-              ratione?
+            <p className='aml-title title-medium'>
+              {dictionary.about.left.title}
             </p>
+            <p className='aml-text'>{dictionary.about.left.text}</p>
           </div>
           <div className='about-main-right'>
-            <p className='amr-title title-medium'>Tech Stack</p>
+            <p className='amr-title title-medium'>
+              {dictionary.about.right.title}
+            </p>
 
             <ul className='amr-tech'>
-              <li className='amr-tech-item'>
-                <p className='ati-title title-small'>Frontend</p>
+              {dictionary.about.right.items.map((item: any) => (
+                <li className='amr-tech-item' key={item.title}>
+                  <p className='ati-title title-small'>{item.title}</p>
 
-                <ul className='ati-list'>
-                  <li className='ati-list-item'>
-                    HTML5, CSS3, JavaScript (ES6)
-                  </li>
-                  <li className='ati-list-item'>React.js, Redux</li>
-                  <li className='ati-list-item'>Vue.js, Nuxt.js</li>
-                  <li className='ati-list-item'>Typescript</li>
-                </ul>
-              </li>
-
-              <li className='amr-tech-item'>
-                <p className='ati-title title-small'>Backend</p>
-
-                <ul className='ati-list'>
-                  <li className='ati-list-item'>Node.js, Express</li>
-                  <li className='ati-list-item'>MongoDB</li>
-                  <li className='ati-list-item'>Typescript</li>
-                </ul>
-              </li>
-
-              <li className='amr-tech-item'>
-                <p className='ati-title title-small'>Other</p>
-
-                <ul className='ati-list'>
-                  <li className='ati-list-item'>git</li>
-                  <li className='ati-list-item'>GitHub, Bitbucket</li>
-                  <li className='ati-list-item'>Figma</li>
-                </ul>
-              </li>
+                  <ul className='ati-list'>
+                    {item.subitems.map((subitem: any) => (
+                      <li className='ati-list-item' key={subitem}>
+                        {subitem}
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
             </ul>
           </div>
         </main>

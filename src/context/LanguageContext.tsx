@@ -1,31 +1,36 @@
-import { createContext, useState } from 'react'
+import React, { createContext, useState } from 'react'
 import languages from '../lang/languages'
 
-const LanguageContext = createContext({
-  currentLanguage: 'cs',
-  dictionary: languages.cs
-})
+interface LangInterface {
+  type: 'cs' | 'en'
+  dictionary: any
+}
 
-// export const LanguageProvider = ({ children }: any) => {
-//   return (
-//     <LanguageContext.Provider value >
-//       {children}
-//     </LanguageContext.Provider>
-//   )
-// }
+interface LangContextInterface {
+  lang: LangInterface
+  setLang: React.Dispatch<React.SetStateAction<LangInterface>>
+}
 
-// export default LanguageContext
+export const LanguageContext = createContext<LangContextInterface>(
+  {} as LangContextInterface
+)
 
-export const LanguageProvider = ({ children }: any) => {
-  const [currentLanguage, setCurrentLanguage] = useState<'cs' | 'en'>('cs')
-  const provider = {
-    currentLanguage,
-    setCurrentLanguage,
-    dictionary: languages[currentLanguage]
-  }
+const LanguageProvider = ({ children }: any) => {
+  const [lang, setLang] = useState<LangInterface>({
+    type: 'cs',
+    dictionary: languages.cs
+  })
+
   return (
-    <LanguageContext.Provider value={provider}>
+    <LanguageContext.Provider
+      value={{
+        lang,
+        setLang
+      }}
+    >
       {children}
     </LanguageContext.Provider>
   )
 }
+
+export default LanguageProvider

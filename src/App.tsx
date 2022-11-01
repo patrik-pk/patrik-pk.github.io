@@ -8,22 +8,24 @@ import CodeShowcase from './components/code-showcase/code-showcase.component'
 import Contact from './components/contact/contact.component'
 import Footer from './components/footer/footer.component'
 
+import LanguageProvider from './context/LanguageContext'
+
 import './reset.scss'
 import './style.scss'
 
-// TODO: setup simple context
-
 const App = () => {
   return (
-    <div className='app'>
-      <Header />
-      <Navbar />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-      {/* <CodeShowcase /> */}
-    </div>
+    <LanguageProvider>
+      <div className='app'>
+        <Header />
+        <Navbar />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+        {/* <CodeShowcase /> */}
+      </div>
+    </LanguageProvider>
   )
 }
 

@@ -79,11 +79,11 @@
 
   &.active,
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: $pink;
   }
 
-  &:focus {
+  &:focus-visible {
     text-decoration: underline;
   }
 }
