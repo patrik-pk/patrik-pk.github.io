@@ -8,6 +8,10 @@
 .filter-options {
   display: flex;
   margin: -30px;
+
+  @include xs {
+    margin: -10px;
+  }
 }
 
 .filter-options-item {
@@ -23,6 +27,10 @@
   text-transform: uppercase;
   cursor: pointer;
   // transition: 300ms all;
+
+  @include xs {
+    margin: 10px;
+  }
 
   &.selected {
     background: $pink;

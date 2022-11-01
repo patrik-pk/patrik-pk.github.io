@@ -13,7 +13,7 @@ const SectionTitle = ({ content, className }: SectionTitleProps) => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '0px',
+      rootMargin: '-20%',
       treshold: 1.0
     }
 
@@ -31,19 +31,18 @@ const SectionTitle = ({ content, className }: SectionTitleProps) => {
   }, [])
 
   return (
-    <>
+    <div className='section-title-container' ref={titleRef}>
       <h3
         className={`section-title ${className || ''} ${
           isVisible ? 'visible' : ''
         }`}
-        ref={titleRef}
       >
         {content}
       </h3>{' '}
       <div
         className={`section-title-underline ${isVisible ? 'visible' : ''}`}
       ></div>
-    </>
+    </div>
   )
 }
 
