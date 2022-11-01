@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.747c8b65.css",
-    "main.js": "/static/js/main.f59087ba.js",
+    "main.css": "/static/css/main.42b20f91.css",
+    "main.js": "/static/js/main.f60ee02a.js",
     "static/media/zenich-a-nevesta.png": "/static/media/zenich-a-nevesta.022267a959b17ed75b24.png",
     "static/media/pay-vip.png": "/static/media/pay-vip.0f30fb7a2c1d2c9656c7.png",
     "static/media/portfolio.png": "/static/media/portfolio.1727865f44a786122f9c.png",
@@ -18,11 +18,11 @@
     "static/media/linkedin.svg": "/static/media/linkedin.d09d64fe30b941c2d5dba4695179f496.svg",
     "static/media/arrow-up.svg": "/static/media/arrow-up.6ac1dd5e2466768fdde4bb7a348ebfde.svg",
     "static/media/email.svg": "/static/media/email.09f59b228b67847fa9c917396a218b25.svg",
-    "main.747c8b65.css.map": "/static/css/main.747c8b65.css.map",
-    "main.f59087ba.js.map": "/static/js/main.f59087ba.js.map"
+    "main.42b20f91.css.map": "/static/css/main.42b20f91.css.map",
+    "main.f60ee02a.js.map": "/static/js/main.f60ee02a.js.map"
   },
   "entrypoints": [
-    "static/css/main.747c8b65.css",
-    "static/js/main.f59087ba.js"
+    "static/css/main.42b20f91.css",
+    "static/js/main.f60ee02a.js"
   ]
 }
