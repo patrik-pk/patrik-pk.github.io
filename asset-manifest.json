@@ -1,18 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.3bb91b77.css",
-    "main.js": "/static/js/main.4d256629.js",
+    "main.css": "/static/css/main.c9caf933.css",
+    "main.js": "/static/js/main.af528873.js",
+    "static/media/zenich-a-nevesta.png": "/static/media/zenich-a-nevesta.022267a959b17ed75b24.png",
+    "static/media/pay-vip.png": "/static/media/pay-vip.0f30fb7a2c1d2c9656c7.png",
+    "static/media/portfolio.png": "/static/media/portfolio.1727865f44a786122f9c.png",
+    "static/media/zelena-zahrada.png": "/static/media/zelena-zahrada.c5a42f7a8f2d154072c5.png",
+    "static/media/peko-web.png": "/static/media/peko-web.31a67a737fc41bf99c02.png",
+    "static/media/peko-shop.png": "/static/media/peko-shop.eb51495486a1d5ebea90.png",
+    "static/media/reklamni-potisk.png": "/static/media/reklamni-potisk.a0d0751b802c3323b8b1.png",
+    "static/media/grm.png": "/static/media/grm.ec51c3db5caa07f9fdf2.png",
+    "static/media/header.jpg": "/static/media/header.4447e49b09e10826258a.jpg",
     "static/media/profile.jpg": "/static/media/profile.f34328b715f29c576b55.jpg",
+    "static/media/simple-rpg.png": "/static/media/simple-rpg.429bc225a35f0cc4aae1.png",
     "static/media/github.svg": "/static/media/github.b3895b64861b1cc897dd8660d781d838.svg",
+    "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.d09d64fe30b941c2d5dba4695179f496.svg",
     "static/media/arrow-up.svg": "/static/media/arrow-up.6ac1dd5e2466768fdde4bb7a348ebfde.svg",
-    "index.html": "/index.html",
     "static/media/email.svg": "/static/media/email.09f59b228b67847fa9c917396a218b25.svg",
-    "main.3bb91b77.css.map": "/static/css/main.3bb91b77.css.map",
-    "main.4d256629.js.map": "/static/js/main.4d256629.js.map"
+    "main.c9caf933.css.map": "/static/css/main.c9caf933.css.map",
+    "main.af528873.js.map": "/static/js/main.af528873.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bb91b77.css",
-    "static/js/main.4d256629.js"
+    "static/css/main.c9caf933.css",
+    "static/js/main.af528873.js"
   ]
 }
